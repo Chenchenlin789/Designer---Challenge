@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
 
 /* Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000 */
 
@@ -18,7 +17,17 @@ header {
     background-size: 600px 500px;
     padding:0;
     margin:0;
+    /* animation: up 3s ease-in-out infinite;    */
 }
+
+/* @keyframes up {
+    from {
+        background-position: 100% 0;
+}  
+    to {
+        background-position: 100% 35px;
+}
+} */
 
 
 nav > p {
@@ -82,7 +91,7 @@ main section:nth-of-type(2) {
     display: flex;
 }
 
-section h2:first-of-type {
+.idea {
     font-size: 3em;
     padding-left: 5%;
     margin-left: 3%;
@@ -91,7 +100,7 @@ section h2:first-of-type {
     
 }
 
-.idea { 
+.idea >p{ 
     font-size: 1em;
     line-height: 1.8;
     font-weight: 100;
@@ -173,52 +182,118 @@ main section article{
     margin-bottom: 10%;
     line-height: 1.7;
 }
+
 /* challenge Steps 1-4  */
-.big {
-    width: 40%;
-    height: 50vh;
-}
-
-main section:nth-of-type(5) {
-    margin: 10vh 5% 10% 0;
-    padding-left:55%;
-    padding-top: 30vh;
-    background: url(../img/step01.png) left/contain no-repeat;
-}
-
-main section:nth-of-type(6) {
-    margin: 10vh 5% 10% 3%;
-    padding-top: 30vh;
-    padding-right: 135px;
-    background: url(../img/step02.png) right/contain no-repeat; 
-    background-size: smaller;
-}
-section #step1 div {
-    line-height: 2.3;
-}
-
-#step2 div {
-    width: 40%;
-    line-height: 2.3;
-}
-
-#step3 {
-    display: flex;
-}
-
-#step4 {
-    display: flex;
-}
-
 
 .grey {
-    font-size: 4em;
+    font-size: 3em;
     color: lightgrey;
 }
 
-.text {
-    font-size: 2em;
-    font-weight: 200;
-    line-height: 1.8;
+/* STEP 1 */
+#step1 {
+    display:flex;
+    margin: 10vh 5%;
 }
+
+#step1 div {
+    line-height: 2.3;
+    flex-basis: 100%;
+    padding-right: 5%;
+}
+
+/* STEP 2 */
+#step2 {
+    display: flex;
+    margin: 10vh 5%;
+}
+
+#step2 div {
+    flex-basis: 100%;
+    line-height: 2.3;
+    padding-right: 5%;
+}
+
+.big {
+    height: 50vh;
+}
+
+/* STEP 3 */
+#step3 {
+    display: flex;
+    margin: 10vh 5%;
+}
+
+#step3 div {
+    flex-basis: 100%;
+    line-height: 2.3;
+    padding-right: 5%;
+}
+
+/* STEP 4 */
+#step4 {
+    display: flex;
+    margin: 10vh 5%;
+}
+
+#step4 div {
+    flex-basis: 100%;
+    line-height: 2.3;
+    padding-right: 5%;
+}
+
+/* Last section */
+.last {
+    text-align: center;
+}
+.last > h2 {
+    font-size: 3em;
+    margin-top: 40vh;
+    margin-bottom: 10vh;
+}
+
+.last > p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 10vh;
+}
+
+input {
+    
+    border: none;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+/* submit form */
+.mail {
+    box-shadow: 1px 3px 7px 3px rgb(220, 235, 240);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 1rem;
+    width: 45%;
+}
+
+.btn {
+    margin-left: 40%;
+    margin-bottom: 20vh;
+    display: block;
+    padding: 1em 3em;
+    color: white;
+    background-color: #ff3571;
+    text-align: center;
+    width: 20%;
+    border-radius: 3px;
+    
+}
+
+footer >p {
+    margin-left: 10%;
+    margin-top: 70px;
+    font-weight: 100;
+    font-size: .9rem;;
+}
+
+
 
