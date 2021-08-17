@@ -87,17 +87,17 @@ div h2 {
   }
 
 /* every idea section */
-main section:nth-of-type(2) {
+.idea {
     display: flex;
+    justify-content: space-between;
 }
 
-.idea {
+.idea >h2 {
     font-size: 3em;
     padding-left: 5%;
     margin-left: 3%;
     margin-top: 15%;
-    justify-content: space-between;
-    
+    flex-basis: 100%;
 }
 
 .idea >p{ 
@@ -105,11 +105,12 @@ main section:nth-of-type(2) {
     line-height: 1.8;
     font-weight: 100;
     margin-top: 15%;
-    display: flex;
-    justify-content: flex-start;
-    padding-right: 155px;
-    padding-left: 75px;
-    width: 50%;
+    padding-left: 5%;
+    padding-right: 10%;
+    flex-basis: 100%;
+
+    /* padding-right: 155px;
+    padding-left: 75px; */
 }
 
 /* paragraph  */
@@ -268,18 +269,19 @@ input {
 /* submit form */
 .mail {
     box-shadow: 1px 3px 7px 3px rgb(220, 235, 240);
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 1.3em;
+    margin-bottom: 35px;
     text-align: center;
     font-size: 1rem;
-    width: 45%;
+    width: 40%;
 }
 
 .btn {
     margin-left: 40%;
     margin-bottom: 20vh;
     display: block;
-    padding: 1em 3em;
+    padding: 1.5em 1.5em;
     color: white;
     background-color: #ff3571;
     text-align: center;
